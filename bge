@@ -1,0 +1,60 @@
+This is BASH 5.1- DISPLAY on :0 Ian Martin Ajzenszmidt 
+
+Fri 11 Aug 2023 21:17:43 AEST
+(21:17 ian@ian-Aspire-One-753 ~) > gfortran bitwise.f08
+(21:18 ian@ian-Aspire-One-753 ~) > ./a.out
+   0.00000000               4           4
+(21:18 ian@ian-Aspire-One-753 ~) > cat bitwise.f08
+       integer i
+       integer j
+       logical result1
+       i = 4.0
+       j=  4.0
+       result1 = bge(i,j)
+       print *,result, i, j
+       end program
+(21:19 ian@ian-Aspire-One-753 ~) > sloccount  bitwise.f08
+Have a non-directory at the top, so creating directory top_dir
+Adding /home/ian/bitwise.f08 to top_dir
+Categorizing files.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+0       top_dir         (none)
+SLOC total is zero, no further analysis performed.
+(21:20 ian@ian-Aspire-One-753 ~) > cp bitwise.f08 bitwise.f
+(21:24 ian@ian-Aspire-One-753 ~) > sloccount  bitwise.f
+Have a non-directory at the top, so creating directory top_dir
+Adding /home/ian/bitwise.f to top_dir
+Categorizing files.
+Finding a working MD5 command....
+Found a working MD5 command.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+8       top_dir         fortran=8
+
+
+Totals grouped by language (dominant language first):
+fortran:          8 (100.00%)
+
+
+
+
+Total Physical Source Lines of Code (SLOC)                = 8
+Development Effort Estimate, Person-Years (Person-Months) = 0.00 (0.02)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 0.04 (0.51)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 0.03
+Total Estimated Cost to Develop                           = $ 170
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
+SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
+redistribute it under certain conditions as specified by the GNU GPL license;
+see the documentation for details.
+Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."
+(21:24 ian@ian-Aspire-One-753 ~) > 
